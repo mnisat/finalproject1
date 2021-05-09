@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+
+  <title>Project</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <img style="width: 20%;" src="img/aum.png" alt="">
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="index.html" data-after="Home">Home</a></li>
+            <li><a href="description.html" data-after="Service">Description</a></li>
+            <li><a href="ta.html" data-after="Projects">TA Application</a></li>
+            <li><a href="gpa.html" data-after="About">GPA</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>GPA <span></span></h1>
+        <h1>Calculator <span></span></h1>
+        <href href="#projects" type="button" class="cta"> scroll down </href>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+  <!-- GPA Section -->
+  <section id="services">
+    <div class="services container">
+      <div class="service-top">
+        <h1 class="section-title">GPA <span>C</span>alculator</h1>
+      </div>
+
+      <div class="form">
+   
+        <div class="inputfield">
+           <label for="firstname">Course Name and Code</label>
+           <input type="text" id="cr" class="input" placeholder="6970 front-end webdevelopment" required><br>
+        </div>
+
+        <div class="inputfield">
+           <label for="lastname">Enter Your Marks: </label>
+           <input type="number" id="mr" class="input" placeholder="95" required><br>
+        </div>
+
+        <div class="inputfield">
+           <label for="Student ID">Credit Hours: </label> 
+           <input type="number" id="ch" class="input" placeholder="3" required>
+        </div>
+
+        <div class="inputfield">
+         <button class="btn" onclick="addRecord()">Submit</button>
+        </div>
+
+        <br>
+        <br>
+
+        <p id="error"></p>
+
+        <h3>Result:</h3>
+
+        <table>
+           <tr>
+               <td class="r" id="cn1"></td>
+               <td class="r" id="ch1"></td>        
+               <td class="r" id="cm1"></td>
+               
+               <td class="r" id="gr1"></td>
+
+               <td class="r" id="gp1"></td>
+               <td class="r" id="tp1"></td>
+          </tr>
+
+           <tr>
+            <td class="rt" id="Scn">Total Marks</td>
+            <td class="rt" id="tcr"></td>
+            <td class="rt" id="t"></td>
+            <td class="rt"></td>
+            <td class="rt"></td>
+            <td class="rt" id="tpo"></td>
+           </tr>
+
+           
+          <tr>
+           <td class="rt" id="cgpa"></td>
+        </tr>
+         
+
+        </table>
+
+        <div class="inputfield">
+        <button class="btn2" onclick="refreshElement()">Reset</button>
+        </div>
+
+       
+     </div>
+              <script>
+              displayCourses();
+              </script>
+     
+              
+  </div>
+
+
+    </div>
+  </section>
+  <!-- End GPA Section -->
+
+  
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title">Contact <span>info</span></h1>
+      </div>
+      <div class="contact-items">
+
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/carbon-copy/80/000000/phone.png"/></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2>(334) 244-3000 </h2>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          
+          <div class="icon"><img src="https://img.icons8.com/carbon-copy/80/000000/email.png"/></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>admissions@aum.edu</h2>
+          </div>
+        </div>
+        
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/wired/64/000000/map.png"/></div>
+          <div class="contact-info">
+            <h1>Address</h1>
+            <h2>7400 East Drive Montgomery, AL 36117</h2>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>Auburn</span> University <span>At </span>Montgomery</h1>
+      </div>
+      <br>
+      <br>
+     <ul style="text-decoration:underline;
+              list-style: none;
+              font-size: large;
+              display: flex;
+              text-indent:1cm;
+     ">
+      <li><a href="index.html">  Home</a></li>
+       <li> <a href="description.html">Description</a> </li>
+       <li> <a href="ta.html"> TA Application </a></li>
+       <li> <a href="gpa.html"> GPA</a></li>
+     </ul>
+     <br>
+     <br>
+      <div class="social-icon">
+
+        <div class="social-item">
+          <a href="https://www.instagram.com/auburnmontgomery/"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/></a>
+        </div>
+
+        <div class="social-item">
+          <a href="https://www.facebook.com/AUM.COS/"><img src="https://img.icons8.com/fluent/48/000000/facebook-new.png"/></a>
+        </div>
+
+        <div class="social-item">
+          <a href="https://twitter.com/aumontgomery"><img src="https://img.icons8.com/plasticine/100/000000/twitter--v2.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.youtube.com/user/AuburnMontgomery"><img src="https://img.icons8.com/color/48/000000/youtube-tourtials.png"/></a>
+        </div>
+      </div>
+      <p>Copyright © 2020 MDNisat. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+
+  <script src="gpa.js"></script>
+</body>
+
+</html>

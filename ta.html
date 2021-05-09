@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link  href="gpa.js">
+  <title>Project</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <img style="width: 20%;" src="img/aum.png" alt="">
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="index.html" data-after="Home">Home</a></li>
+            <li><a href="description.html" data-after="Service">Description</a></li>
+            <li><a href="ta.html" data-after="Projects">TA Application</a></li>
+            <li><a href="gpa.html" data-after="About">GPA</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Teaching <span></span></h1>
+        <h1>Assistant <span></span></h1>
+        <h1>Application form <span></span></h1>
+        <href href="#projects" type="button" class="cta"> scroll down </href>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+  <!-- TA Section -->
+  <section id="services">
+    <div class="services container">
+      <div class="service-top">
+        <h1 class="section-title">Application<span>Form</span></h1>
+      </div>
+
+      <br>
+
+      <form name="myform" action="survey_data.html" method="GET"> 
+      
+        <div class="form">
+
+        <div class="inputfield">
+         <label for="firstname">First name: <span class="required">*</span></label>
+         <input type="text" name="firstname" placeholder="james" class="input"  required><br>
+        </div>
+
+        <div class="inputfield">
+        <label for="lastname">Last name: <span class="required">*</span></label>
+        <input type="text" name="lastname" placeholder="bond" class="input" required><br>
+        </div>
+
+        <div class="inputfield">
+        <label for="Student ID">Student ID <span class="required">*</span></label> 
+        <input type="text" name="Student ID" class="input" placeholder="Ex: s11111" required ><br>
+        </div>
+
+        <div class="inputfield">
+        <label for="gender" type="text" name="gender" id="lastname">Gender</label>
+
+        <div class="custom_select">
+        <select type="text" name="gender" id="lastname" >
+        <div class="custom_select">
+           
+               <option value="    " type="text" name="gender" >Select</option>
+               <option value="male" type="text" name="gender" >Male</option>
+               <option value="female" type="text" name="gender" >Female</option>
+        </select> 
+        </div>
+        </div>
+
+        <div class="inputfield">
+        <label for="GPA">GPA</label>
+         <input  type="GPA" name="GPA" class="input" placeholder="Ex: 4.0" pattern="[0-9]+([\.][0-9]{0,2})?"><br>
+        </div>
+
+        <div class="inputfield">
+        <label for=" Submission Date">Submission Date </label>
+        <input type="Submission Date" name="Submission Date" class="input"  placeholder="Ex: January 01"><br>
+        </div>
+
+        <div class="inputfield">
+           <label type="text" name="Comments" id="Comments">Comments</label>
+           <textarea class="textarea" placeholder="Write Something..." type="text" name="Comments" id="Comments"></textarea>
+        </div> 
+        
+        <div class="inputfield">
+        <input type="submit" name="button" class="btn" value="Submit"> 
+         <input type="reset" name="reset" class="btn2"> 
+        </div>
+     </div>
+
+
+  </div>
+  
+
+
+
+     
+  <!-- End TA Section -->
+
+  
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title">Contact <span>info</span></h1>
+      </div>
+      <div class="contact-items">
+
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/carbon-copy/80/000000/phone.png"/></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2>(334) 244-3000 </h2>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          
+          <div class="icon"><img src="https://img.icons8.com/carbon-copy/80/000000/email.png"/></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>admissions@aum.edu</h2>
+          </div>
+        </div>
+        
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/wired/64/000000/map.png"/></div>
+          <div class="contact-info">
+            <h1>Address</h1>
+            <h2>7400 East Drive Montgomery, AL 36117</h2>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>Auburn</span> University <span>At </span>Montgomery</h1>
+      </div>
+      <br>
+      <br>
+     <ul style="text-decoration:underline;
+              list-style: none;
+              font-size: large;
+              display: flex;
+              text-indent:1cm;
+     ">
+      <li><a href="index.html">  Home</a></li>
+       <li> <a href="description.html">Description</a> </li>
+       <li> <a href="ta.html"> TA Application </a></li>
+       <li> <a href="gpa.html"> GPA</a></li>
+     </ul>
+     <br>
+     <br>
+      <div class="social-icon">
+
+        <div class="social-item">
+          <a href="https://www.instagram.com/auburnmontgomery/"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/></a>
+        </div>
+
+        <div class="social-item">
+          <a href="https://www.facebook.com/AUM.COS/"><img src="https://img.icons8.com/fluent/48/000000/facebook-new.png"/></a>
+        </div>
+
+        <div class="social-item">
+          <a href="https://twitter.com/aumontgomery"><img src="https://img.icons8.com/plasticine/100/000000/twitter--v2.png"/></a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.youtube.com/user/AuburnMontgomery"><img src="https://img.icons8.com/color/48/000000/youtube-tourtials.png"/></a>
+        </div>
+      </div>
+      <p>Copyright © 2020 MDNisat. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+ 
+</body>
+
+</html>
